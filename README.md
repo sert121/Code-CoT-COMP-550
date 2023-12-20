@@ -61,7 +61,7 @@ $ pip install -r requirements.txt
 4. Misc
     - To run certain scripts you may need to include an ```OPENAI``` and ```HUGGINGFACE``` token, to call the required APIs. ```OPENAI``` token can be exported by using export  OPENAI_API_KEY = <OPENAIKEY>.
       The ```TOKEN``` can be set in the respective files using the variable defined at the beginning of the files using it (codellama).
-    - The above evaluation was performed on 1 80GB A100, with required 128GB RAM, and 24 CPUs. We acknowledge Mila for supporting us with the compute resources.
+    - The above evaluation was performed on a 80GB A100 GPU, with 128GB RAM, alongwith 24 CPUs. We acknowledge Mila for supporting us with the compute resources.
     
    
     
