@@ -44,9 +44,9 @@ $ pip install -r requirements.txt
 3. File info:
  
    1. ```eval_gpt_mbpp.py```:
-    We include several functions such as ```wrap_code_template``` , ```wrap_code_template_baseline```, ```wrap_with_steps```, ```one_shot_pseudocode```,```one_shot_steps```,```zero_shot_pseudocode``` to construct prompts according to different settings  (one shot, with and without steps and psuedocode). We also include some other variations we had tried with these models.
-   2. ```eval_codellama_mbpp.py```:
-    We include several functions such as ```construct_codellama_prompt```, ```construct_codellama_pseudo_prompt```, ```construct_codellama_pseudo_prompt_example```, ```construct_codellama_prompt_steps``` to construct prompts according to different settings  (one shot, with and without steps and psuedocode). We also include some other variations we had tried with these models.
+    We include several functions such as ```wrap_code_template``` , ```wrap_code_template_baseline```, ```wrap_with_steps```, ```one_shot_pseudocode```,```one_shot_steps```,```zero_shot_pseudocode``` to construct prompts according to different settings  (one shot, with and without steps and psuedocode). We also include some other variations we had tried with GPT.
+   2. ```eval_gpt_humaneval.py```:
+   We include similar functions like above, for testing GPT on human eval as well.
    3. For ```eval_codellama_humaneval.py``` we include similar functions:
    Functions like ```construct_codellama_prompt```, ```construct_codellama_prompt_v2```, ```construct_codellama_prompt_oneshot_examples```, ```construct_codellama_comment_prompt_one_shot_psuedocode```, ```construct_codellama_comment_prompt_one_shot```, help us create prompts for performing baseline, zero shot steps/pseudocode, as well as 1-shot steps or pseudocode evalutions.
    4. For ```eval_codellama_mbpp.py``` also contains such prompt functions like:
