@@ -1,0 +1,52 @@
+[INST] Below is an instruction that describes a task. Write a response that appropriately completes the request:
+ Remember to respond with only the function definition, nothing else. You shall be provided pseudocode to generate more accurate code. You are provided an example to understand the structure. 
+Task: Write a function to find the kth element in the given array. 
+Tests:
+ assert kth_element([12,3,5,7,19], 5, 2) == 3
+assert kth_element([17,24,8,23], 4, 3) == 8
+assert kth_element([16,21,25,36,4], 5, 4) == 36
+
+ 
+EXAMPLE STARTS HERE
+    Task: Write a program that extracts all substrings of length n from a given string.
+    Tests:
+    assert find_substrings("abc", 2) == ["ab", "bc"]
+    assert find_substrings("abc", 3) == ["abc"]
+    assert find_substrings("abc", 4) == []
+    
+    Pseudocode:
+    function extract_substrings(string, n)
+        # Initialize an empty list for substrings
+        Initialize substrings as an empty list
+
+        # Loop from start to the point where substring of length n can be extracted
+        for every index in the string
+            # Add substring of length n to the list
+            append string[i:i + n] to substrings
+
+        # Return the list of substrings
+        return the substrings
+    Code:
+    def find_substrings(string, n):
+        substrings = []
+        for i in range(len(string) - n + 1):
+            substrings.append(string[i:i + n])
+        return substrings
+EXAMPLE ENDS HERE     
+ 
+Pseudocode:
+function find_kth_element(array, k):
+    # Check if the array is empty
+    if array is empty:
+        # If it is, return a message indicating that the array is empty
+        return "The array is empty"
+
+    # Check if k is less than 1 or greater than the length of the array
+    if k is less than 1 or k is greater than the length of the array:
+        # If it is, return a message indicating that k is out of range
+        return "k is out of range"
+
+    # If the array is not empty and k is within range, return the kth element
+    return the kth element in the array 
+Code:
+[/INST]
