@@ -15,7 +15,7 @@ $ pip install -r requirements.txt
     ```
     OR if you plan to evaluate GPT3.5
     ```bash
-    $ python eval_gpt_humaneval.py --model_name codellama/CodeLlama-7b-Instruct-hf --length 100
+    $ python eval_gpt_humaneval.py 
     ``` 
     2.2 To evaluate for a number greater/lesser than 100, you would need to change the length on line 57 in human-eval/human_eval/evaluation.py to match the length set.
     ```bash
