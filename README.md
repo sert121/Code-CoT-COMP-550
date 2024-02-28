@@ -1,4 +1,4 @@
-## Code Repository for Code-COT: Does Adapting Chain-of-Thought Help with Code Generation? 
+ Does Adapting Chain-of-Thought Help ? 
 
 1. Installation:
 ```bash
